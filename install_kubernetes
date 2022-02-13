@@ -1,0 +1,69 @@
+STEP-1: On All Machines ( Master & All nodes ):
+
+### INSTALL DOCKER & Configure 
+
+sudo apt-get update
+
+sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+
+sudo apt-get update ; clear
+
+sudo apt-get install -y docker-ce
+
+sudo vi /etc/docker/daemon.json
+
+{
+		"exec-opts": ["native.cgroupdriver=systemd"]
+}
+
+sudo service docker restart
+
+### INSTALL KUBEADM,KUBELET,KUBECTL (In prod env, we can install KUBEADM only on master)
+
+echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" | sudo tee /etc/apt/sources.list.d/kubernetes.list
+
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+
+sudo apt-get update ; clear
+
+sudo apt-get install -y kubelet kubeadm kubectl
+
+STEP-2: On MASTER only:
+
+sudo kubeadm init --ignore-preflight-errors=all
+
+sudo mkdir -p $HOME/.kube
+
+sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+
+sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+Alternatively, if you are the root user, you can run:
+
+export KUBECONFIG=/etc/kubernetes/admin.conf
+
+## install networking driver -- Weave/flannel/canal/calico etc... 
+
+## below installs weave networking driver 
+
+kubectl apply -f "https://cloud.weave.works/k8s/net?k8s-version=$(kubectl version | base64 | tr -d '\n')"
+
+kubectl get nodes
+
+kubectl get all --all-namespaces
+
+STEP 3: On WORKER Nodes only:
+
+copy the kubeadm join token from master & run it on all nodes
+
+kubeadm join X.X.X.X:6443 --token earvgg.xxxxxxxxxxxxxxxxxxxx --discovery-token-ca-cert-hash sha256:99f2989d895bef84582ebff8f8fxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+service kubectl status
+
+
+
+
