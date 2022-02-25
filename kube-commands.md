@@ -50,3 +50,27 @@ Description: will list pods with latest updates
 command: kubectl edit pod <pod name>
 Description: Allows you to edit the pod directly
 ```
+```python
+command: kubectl exec --stdin --tty <pod name> -- <command to execute> /
+Description: Allows you run commands inside the container
+```
+```python
+command: kubectl exec -i -t my-pod --container main-app -- /bin/bash
+Description: If we have multiple container running in pod, we can specify container name to execute commands
+```
+```python
+command: kubectl describe node kworker-node1
+Description: will show detailed node informations
+```
+```python
+command: kubectl logs <pod name> or kubectl logs -f <pod name>
+Description: will show pod logs
+```
+```python
+command: kubectl cluster-info
+Description: will show cluster informations
+```
+```python
+command: kubectl explain <api-resources like pod, namespace, etc>
+Description: will show detailed api-resources informations
+```
