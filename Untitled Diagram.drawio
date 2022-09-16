@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2022-09-16T09:57:06.160Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="IsVEneJa1O7EVpsRsMLm" version="20.3.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-09-16T11:24:58.350Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="mF9GteHNewkSrtpy3fWx" version="20.3.1" type="github">
   <diagram id="y8RgMXlmg_gge-7AhZ-_" name="Page-1">
-    <mxGraphModel dx="1022" dy="468" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="914" dy="551" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -76,11 +76,8 @@
             <mxPoint x="100" y="145" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BDUe3Jq0V9347dnS5RK9-48" value="&lt;h1 style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;What we think!!!&lt;/font&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=#BD7000;fillColor=#f0a30a;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontFamily=Times New Roman;fontSize=7;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="100" y="370" width="120" height="15" as="geometry" />
-        </mxCell>
-        <mxCell id="BDUe3Jq0V9347dnS5RK9-49" value="&lt;h1&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;What happens, when we send a request to k8&#39;s API server?&lt;/font&gt;&lt;br&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=#d79b00;fillColor=#ffcd28;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontFamily=Times New Roman;fontSize=14;gradientColor=#ffa500;" vertex="1" parent="1">
-          <mxGeometry x="300" y="60" width="470" height="40" as="geometry" />
+        <mxCell id="BDUe3Jq0V9347dnS5RK9-48" value="&lt;h1&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;What we think!!!&lt;/font&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=#BD7000;fillColor=#f0a30a;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontFamily=Times New Roman;fontSize=7;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="100" y="370" width="370" height="20" as="geometry" />
         </mxCell>
         <mxCell id="BDUe3Jq0V9347dnS5RK9-68" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
           <mxGeometry x="590" y="120" width="380" height="240" as="geometry" />
@@ -121,8 +118,8 @@
             <mxPoint x="590" y="155" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="BDUe3Jq0V9347dnS5RK9-85" value="&lt;h1 style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;What Really Happens!!!&lt;/font&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=#BD7000;fillColor=#f0a30a;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontFamily=Times New Roman;fontSize=7;fontColor=#000000;" vertex="1" parent="1">
-          <mxGeometry x="600" y="370" width="170" height="20" as="geometry" />
+        <mxCell id="BDUe3Jq0V9347dnS5RK9-85" value="&lt;h1 style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;What Really Happens!!!&lt;/font&gt;&lt;/h1&gt;" style="text;html=1;strokeColor=#BD7000;fillColor=#f0a30a;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;fontFamily=Times New Roman;fontSize=7;fontColor=#000000;" vertex="1" parent="1">
+          <mxGeometry x="590" y="370" width="300" height="20" as="geometry" />
         </mxCell>
         <mxCell id="BDUe3Jq0V9347dnS5RK9-87" value="" style="endArrow=classic;html=1;rounded=0;fontFamily=Times New Roman;fontSize=18;fontColor=#000000;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;fillColor=#0050ef;strokeColor=#001DBC;startArrow=none;" edge="1" parent="1" source="BDUe3Jq0V9347dnS5RK9-93" target="BDUe3Jq0V9347dnS5RK9-70">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
