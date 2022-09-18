@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: multicontainerpod
+  labels:
+    name: myapp
+spec:
+  containers:
+  - name: nginxcontainer
+    image: nginx
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 80
+  - name: alpinecontainer
+    image: alpine
+    command: ['sh','-c','sleep 60']
