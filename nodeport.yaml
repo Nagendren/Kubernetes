@@ -31,4 +31,3 @@ spec:
     app: frontend
   ports:
   - port: 3000
-
