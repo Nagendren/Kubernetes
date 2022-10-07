@@ -14,3 +14,7 @@ spec:
       requests:
         memory: "200Mi"
         cpu: "700m"
+
+#Limtis and Request will be same
+#kubectl create namespace qos-example
+#kubectl delete pod qos-demo --namespace=qos-example
