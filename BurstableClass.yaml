@@ -14,3 +14,4 @@ spec:
         memory: "100Mi"
 #Request will be lesser than Limit
 #kubectl create namespace qos-example
+#kubectl delete pod qos-demo-2 --namespace=qos-example
