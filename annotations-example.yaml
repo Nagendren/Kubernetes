@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: annotation-example
+  annotations:
+    github/reponame: "https://github.com/Nagendren/Kubernetes"
+    blog.url: "https://dcodedevops.blogspot.com/2022/10/kubernetes-labels-selector-and.html"    
+spec:
+  containers:
+  - name: mycontainer
+    image: nginx
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 80
