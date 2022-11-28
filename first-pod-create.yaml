@@ -11,6 +11,6 @@ spec:
     resources:
       limits:
         memory: "128Mi"
-        cpu: "500m"
+        cpu: "500m" #this resources object specifies that the container process needs 50/1000 of a core (5%) and is allowed to use at most 100/1000 of a core (10%). 
     ports:
       - containerPort: 80
